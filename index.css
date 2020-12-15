@@ -73,6 +73,14 @@
 
 #projects-container {
   margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
+  gap: 16px;
+  justify-content: center;
+  max-width: 1000px;
+  width: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .project-tile {
@@ -80,9 +88,13 @@
   display: grid;
 }
 
+.project-tile a {
+  text-decoration: none;
+}
+
 .project-tile__image {
-  height: 280px;
-  width: 100%;
+  height: 320px;
+  width: 320px;
 }
 
 .project-tile__title {
@@ -91,6 +103,10 @@
   color: #fff;
   text-align: center;
   font: 500 18px "Lato";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 2px solid #fff;
 }
 
 @media only screen and (min-width: 576px) {
