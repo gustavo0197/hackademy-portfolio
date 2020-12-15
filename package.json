@@ -1,0 +1,12 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel serve 3000 index.html -d build-dev"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
