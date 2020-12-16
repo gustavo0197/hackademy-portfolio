@@ -4,9 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel serve 3000 index.html -d build-dev"
+    "dev": "parcel serve 3000 index.html -d build-dev",
+    "deploy": "gh-pages -d ./"
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "parcel-bundler": "^1.12.4"
   }
 }
