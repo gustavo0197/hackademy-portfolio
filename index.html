@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal portfolio</title>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -13,22 +18,30 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <!-- Nav bar -->
     <nav id="navbar">
       <ul id="navbar__links">
-        <li>About</li>
-        <li>Work</li>
-        <li>Contact</li>
+        <li>
+          <a href="#welcome-section"> About </a>
+        </li>
+        <li>
+          <a href="#projects"> Work </a>
+        </li>
+        <li>
+          <a href="#contact"> Contact </a>
+        </li>
       </ul>
     </nav>
     <section id="welcome-section">
       <div id="welcome-section__title-container">
-        <h1 id="welcome-section__title">Hey! I'm Gustavo</h1>
+        <h1 class="title">Hey! I'm Gustavo</h1>
         <p id="welcome-section__subtitle">A web developer</p>
       </div>
     </section>
+    <!-- My projects -->
     <section id="projects">
       <h1 id="projects__title">These are some of my projects</h1>
-      <div id="projects-container">
+      <div id="projects__container">
         <div class="project-tile">
           <figure>
             <a href="https://github.com/gustavo0197/react-typescript" target="_blank">
@@ -74,8 +87,37 @@
           </a>
         </div>
       </div>
-      <a href="https://github.com/gustavo0197" target="_blank">Show all</a>
+      <div id="profile-link__container">
+        <a href="https://github.com/gustavo0197" id="profile-link" target="_blank">Show all</a>
+      </div>
     </section>
-    <section id="contact"></section>
+    <!-- Contact -->
+    <section id="contact">
+      <h1 class="title">Let's work together</h1>
+      <div id="contact__social-networks">
+        <a href="https://www.facebook.com/gustavo.velazquez.moctezuma" target="_blank" class="contact-button">
+          <i class="fab fa-facebook-square"></i>
+          Facebook
+        </a>
+        <a href="https://twitter.com/gustavoo0197" target="_blank" class="contact-button">
+          <i class="fab fa-twitter"></i>
+          Twitter
+        </a>
+        <a href="https://github.com/gustavo0197" target="_blank" class="contact-button">
+          <i class="fab fa-github"></i>
+          Github
+        </a>
+        <a href="mailto:gustavo.velazquezm@outlook.com" target="_blank" class="contact-button">
+          <i class="fas fa-envelope"></i>
+          Email
+        </a>
+        <a href="tel:555-555-5555" target="_blank" class="contact-button">
+          <i class="fas fa-phone"></i>
+          Call me
+        </a>
+      </div>
+    </section>
+    <!-- Tests -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
