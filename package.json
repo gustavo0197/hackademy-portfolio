@@ -5,6 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel serve 3000 index.html -d build-dev",
+    "build": "eval $(rm -r build) && parcel build index.html -d build",
+    "build:docker": "npm run build && docker build -t gustavo0197/personal-portfolio .",
     "deploy": "gh-pages -d ./"
   },
   "devDependencies": {
