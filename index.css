@@ -3,6 +3,18 @@
   margin: 0;
   font-family: "Lato";
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.title {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
 /* Navigation bar */
 #navbar {
   background-color: #040a16;
@@ -10,6 +22,9 @@
   padding: 8px 16px;
   height: 50px;
   position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 #navbar__links {
@@ -26,12 +41,17 @@
   gap: 16px;
 }
 
-/* Welcome */
+#navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
 
+/* Welcome */
 #welcome-section {
   background-image: url("./assets/images/background.jpg");
   background-repeat: repeat;
-  height: calc(100vh - 66px);
+  height: 100vh;
 }
 
 #welcome-section__title-container {
@@ -44,17 +64,12 @@
   text-align: center;
 }
 
-#welcome-section__title {
-  color: #fff;
-  font-size: 40px;
-}
-
 #welcome-section__subtitle {
   color: #fff;
   font-size: 24px;
-  margin-top: 16px;
 }
 
+/* Projects */
 #projects {
   padding: 16px;
   background-color: #040a16;
@@ -71,7 +86,7 @@
   transform: translateX(-50%);
 }
 
-#projects-container {
+#projects__container {
   margin-top: 32px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
@@ -81,6 +96,20 @@
   width: 100%;
   margin-left: 50%;
   transform: translateX(-50%);
+}
+
+#profile-link__container {
+  margin: 48px 0;
+  text-align: center;
+}
+
+#profile-link {
+  background-color: #fff;
+  text-decoration: none;
+  padding: 16px;
+  color: #040a16;
+  border-radius: 4px;
+  font: 600 18px "Lato";
 }
 
 .project-tile {
@@ -109,6 +138,35 @@
   border-bottom: 2px solid #fff;
 }
 
+/* Contact */
+#contact {
+  background-color: #040a16;
+  padding: 64px 16px;
+}
+
+#contact__social-networks {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 180px));
+  gap: 16px;
+  justify-content: center;
+}
+
+.contact-button {
+  border: 1px solid #fff;
+  padding: 16px;
+  color: #fff;
+  text-decoration: none;
+  font: 600 18px "Lato";
+  position: relative;
+  text-align: center;
+}
+
+.contact-button i {
+  left: 16px;
+  position: absolute;
+}
+
 @media only screen and (min-width: 576px) {
   #navbar__links {
     font: 500 18px "Lato";
@@ -116,7 +174,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  #welcome-section__title {
+  .title {
     font-size: 50px;
   }
 }
@@ -131,10 +189,4 @@
     font-size: 24px;
     gap: 32px;
   }
-  #welcome-section {
-    height: calc(100vh - 86px);
-  }
-}
-
-@media only screen and (min-width: 1200px) {
 }
